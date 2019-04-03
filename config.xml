@@ -2,10 +2,10 @@
 
 <widget xmlns = "http://www.w3.org/ns/widgets"
   xmlns:gap = "http://phonegap.com/ns/1.0"
-  id = "com.phonegap.app2"
+  id = "com.phonegap.app3"
   version = "1.0.0">
   
- <name> app2-2019 datos del dispositivo </name>
+ <name> app3-2019 datos del dispositivo </name>
  
  <description>
   aplicacion que nos muestra la informacion referente al dispositivo movil
@@ -38,7 +38,7 @@
  
  <!--Colocar icono app-->
  
- <icon src="res/android/mdpi.png"/>
+ <icon src="res/android/salud.png"/>
  
  </widget>
  

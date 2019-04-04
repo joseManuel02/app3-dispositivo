@@ -8,6 +8,11 @@
 <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
 <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
 
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
 <!--grupo JavaScript-->
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/jquery.mobile-1.4.5.min.js"></script>
@@ -16,10 +21,31 @@
 <!--  <script src="js/acciones.js"></script> -->
 <script src="phonegap.js"></script>
 <script type="text/javascript">
-</head>
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
 </script>
 </head>
-<body onLoad="MM_preloadImages('imagenes/logo2.jpg')">
+<body onLoad="MM_preloadImages('imagenes/logo2.jpg','imagenes/7 de abril dia de la salud.png','imagenes/dia-mundial-salud.jpg','imagenes/OMS.png','imagenes/salud-oms.jpg','imagenes/0U47AZCU_400x400.png','imagenes/dia de la salud.jpg','imagenes/DuOA719WkAAKHFB.jpg','imagenes/maxresdefault.jpg','imagenes/hss_001.jpg')">
 <div data-role="page" id="principal" data-theme="a">
  <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="a">
   <h1>7 de abril Dia mundial de la salud</h1>
@@ -51,9 +77,10 @@
    </p>
    </div>
    
-   <div>
-    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','imagenes/logo2.jpg',1)"><img src="imagenes/logoprog.jpg" alt="" width="730" height="525" id="Image13"></a>
-    <div><a href="https://www.paho.org/hq/index.php?option=com_content&view=article&id=12933:world-health-day&Itemid=72498&lang=es" target="_self"> Ir a la página en internet relacionada al tema </a></div>
+   
+    <div>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image17','','imagenes/dia de la salud.jpg',1)"><img src="imagenes/7 de abril dia de la salud.png" alt="" width="500" height="300" id="Image17"></a>
+<div><a href="https://www.paho.org/hq/index.php?option=com_content&view=article&id=12933:world-health-day&Itemid=72498&lang=es" target="_self"> Ir a la página en internet relacionada al tema </a></div>
     
    </div>
    </div>
@@ -94,8 +121,33 @@
     </li>
     </ul>
     </div>
-    
      <div>
+     
+     <div>
+     <p>&nbsp;</p>
+     <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/cobertura_mundial.jpg" alt="cobertura mundial" title="cobertura mundial" id="wows1_0"/></li>
+		<li><img src="data1/images/cobertura_sanitaria.jpg" alt="cobertura sanitaria" title="cobertura sanitaria" id="wows1_1"/></li>
+		<li><img src="data1/images/dia_de_la_salud.jpg" alt="dia de la salud" title="dia de la salud" id="wows1_2"/></li>
+		<li><a href="http://wowslider.net"><img src="data1/images/7_de_abril_dia_de_la_salud.png" alt="css slider" title="7 de abril dia de la salud" id="wows1_3"/></a></li>
+		<li><img src="data1/images/oms.png" alt="OMS" title="OMS" id="wows1_4"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="cobertura mundial"><span><img src="data1/tooltips/cobertura_mundial.jpg" alt="cobertura mundial"/>1</span></a>
+		<a href="#" title="cobertura sanitaria"><span><img src="data1/tooltips/cobertura_sanitaria.jpg" alt="cobertura sanitaria"/>2</span></a>
+		<a href="#" title="dia de la salud"><span><img src="data1/tooltips/dia_de_la_salud.jpg" alt="dia de la salud"/>3</span></a>
+		<a href="#" title="7 de abril dia de la salud"><span><img src="data1/tooltips/7_de_abril_dia_de_la_salud.png" alt="7 de abril dia de la salud"/>4</span></a>
+		<a href="#" title="OMS"><span><img src="data1/tooltips/oms.png" alt="OMS"/>5</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">image slider</a> by WOWSlider.com v8.8</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+<p>&nbsp;</p>
+</div>
         
   </div>
     <div data-role="footer" align="center" data-theme="a" data-position="fixed">
@@ -109,7 +161,7 @@
     </div>
     </div>
     
-       <div data-role="page" id="pagina1" data-add-back-btn="true" data-theme="a">
+<div data-role="page" id="pagina1" data-add-back-btn="true" data-theme="a">
  <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="b">
   <h1>cuando</h1>
   <h1>se celebra</h1>
@@ -121,23 +173,29 @@
   <li>se celebra el 7 de abril de cada año</li>
   <h2>porque se celebra?</h2>
   <li>una fecha que se conmemora desde 1948, con la creación de la Organización Mundial de la Salud.</li>
+  <p>&nbsp;</p>
   <li>la entidad pide a los líderes mundiales que se comprometan a adoptar medidas concretas para promover la salud de todas las personas.</li>
+  <p>&nbsp;</p>
   <p>“La cobertura sanitaria universal (CSU) se logra cuando existe una firme determinación política. Ello significa garantizar que todas las personas, en cualquier lugar, puedan tener acceso a servicios de salud esenciales y de calidad sin tener que pasar apuros económicos”, dicen desde la OMS.</p>
+  <p>&nbsp;</p>
   </div>
   </div>
+  <div>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','imagenes/OMS.png',1)"><img src="imagenes/dia-mundial-salud.jpg" alt="" width="500" height="300" id="Image18"></a> </div>
+  <p>&nbsp;</p>
   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
   <div>
   <img src="imagenes/salud.png" width="46" height="46" alt="pie">
   </div>
   <h4>Aplicación 3 dia mundial de la salud</h4>
     <h4>José Manuel Hernández Atonal</h4>
-    </div>
+  </div>
     </div>
        
     
     
     
-      <div data-role="page" id="pagina2" data-add-back-btn="true" data-theme="a">
+<div data-role="page" id="pagina2" data-add-back-btn="true" data-theme="a">
  <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="b">
   <h1>Que se trata de</h1>
   <h1>conseguir con</h1>
@@ -145,37 +203,63 @@
   </div>
   <div data-role="content" align="center">
   <div>
-  <img src="imagenes/mod2.png" width="100%" height="100%" alt="mod2"></div>
+  <li>la vida y la salud para todas las personas</li>
+  <p>&nbsp;</p>
+  <li>La Organización Mundial de la Salud se fundó sobre la base del principio de que todas las personas deberían poder hacer efectivo su derecho al grado máximo de salud que se pueda lograr.</li>
+  <p>&nbsp;</p>
+  <li>Por lo tanto, la “Salud para todos” ha sido la visión que nos ha guiado a lo largo de más de siete decenios.</li>
+  <p>&nbsp;</p>
+  <p>La Organización dedicará una atención de alto nivel a la CSU por medio de una serie de actos organizados a lo largo de 2018, que comenzarán con el Día Mundial de la Salud, el 7 de abril, con conversaciones a nivel mundial y local sobre la manera de alcanzar el objetivo de la salud para todos.
+  </p>
+  <p>&nbsp;</p>
   </div>
+  </div>
+  <div>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','imagenes/DuOA719WkAAKHFB.jpg',1)"><img src="imagenes/cobertura mundial.jpg" alt="" width="500" height="300" id="Image19"></a> </div>
+  <p>&nbsp;</p>
   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
   <div>
   <img src="imagenes/salud.png" width="46" height="46" alt="pie">
   </div>
   <h4>Aplicación 3 dia mundial de la salud</h4>
     <h4>José Manuel Hernández Atonal</h4>
-    </div>
+  </div>
     </div>
     
     
-     <div data-role="page" id="pagina3" data-add-back-btn="true" data-theme="a">
+<div data-role="page" id="pagina3" data-add-back-btn="true" data-theme="a">
  <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="b">
   <h1>Que hace la</h1>
   <h1>OMS?</h1>
   </div>
   <div data-role="content" align="center">
   <div>
-  <img src="imagenes/mod3.png" width="100%" height="100%" alt="mod3"></div>
+  <p> La OMS y sus asociados intercambiarán ejemplos de medidas que pueden adoptar para lograrla mediante una serie de actos y conversaciones que se celebrarán en distintos niveles:</p>
   </div>
+  <div>
+  <li>ofrecer liderazgo en temas cruciales para la salud y participar en alianzas cuando se requieran actuaciones conjuntas</li>
+  <li>determinar las líneas de investigación y estimular la producción, difusión y aplicación de conocimientos valiosos</li>
+  <li>establecer normas y promover y seguir de cerca su aplicación en la práctica</li>
+  <li>formular opciones de política que aúnen principios éticos y de fundamento científico</li>
+  <li>prestar apoyo técnico, catalizar el cambio y crear capacidad institucional duradera</li>
+  <li>seguir de cerca la situación en materia de salud y determinar las tendencias sanitarias.</li>
+  <li>Estas funciones básicas se han descrito en el Undécimo Programa General de Trabajo</li>
+  </div>
+  </div>
+  <div>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image20','','imagenes/maxresdefault.jpg',1)"><img src="imagenes/0U47AZCU_400x400.png" alt="" width="600" height="400" id="Image20"></a>
+   </div>
+  <p>&nbsp;</p>
   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
   <div>
   <img src="imagenes/salud.png" width="46" height="46" alt="pie">
   </div>
   <h4>Aplicación 3 dia mundial de la salud</h4>
     <h4>José Manuel Hernández Atonal</h4>
-    </div>
+  </div>
     </div>
     
-     <div data-role="page" id="pagina4" data-add-back-btn="true" data-theme="a">
+<div data-role="page" id="pagina4" data-add-back-btn="true" data-theme="a">
  <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="b">
   <h1>Cobertura</h1>
   <h1>sanitaria</h1>
@@ -183,18 +267,36 @@
   </div>
   <div data-role="content" align="center">
   <div>
-  <img src="imagenes/mod4.png" width="100%" height="100%" alt="mod4"></div>
+  <p>El objetivo de la cobertura sanitaria universal es asegurar que todas las personas reciban los servicios sanitarios que necesitan, sin tener que pasar penurias financieras para pagarlos.
+<br>
+Para que una comunidad o un país pueda alcanzar la cobertura sanitaria universal se han de cumplir varios requisitos, a saber:</p>
+<p>Existencia de un sistema de salud sólido, eficiente y en buen funcionamiento, que satisfaga las necesidades de salud prioritarias en el marco de una atención centrada en las personas (incluidos servicios de VIH, tuberculosis, paludismo, enfermedades no transmisibles, salud maternoinfantil) para lo cual deberá:</p>
+<p>&nbsp;</p>
+<li>proporcionar a las personas información y estímulos para que se mantengan sanas y prevengan enfermedades,
+detectar enfermedades tempranamente,
+disponer de medios para tratar las enfermedades,
+ayudar a los pacientes mediante servicios de rehabilitación.</li>
+<p>&nbsp;</p>
+<li>Asequibilidad: debe haber un sistema de financiación de los servicios de salud, de modo que las personas no tengan que padecer penurias financieras para utilizarlos. Esto se puede lograr por distintos medios.
+Acceso a medicamentos y tecnologías esenciales para el diagnóstico y tratamiento de problemas médicos.</li>
+<p>&nbsp;</p>
+<li>Una dotación suficiente de personal sanitario bien capacitado y motivado para prestar los servicios que satisfagan las necesidades de los pacientes, sobre la base de las mejores pruebas científicas disponibles.Una dotación suficiente de personal sanitario bien capacitado y motivado para prestar los servicios que satisfagan las necesidades de los pacientes, sobre la base de las mejores pruebas científicas disponibles.</li>
+<p>&nbsp;</p>
   </div>
+  </div>
+  <div>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','imagenes/salud-oms.jpg',1)"><img src="imagenes/cobertura sanitaria.jpg" alt="" width="700" height="500" id="Image21"></a> </div>
+  <p>&nbsp;</p>
   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
   <div>
   <img src="imagenes/salud.png" width="46" height="46" alt="pie">
   </div>
   <h4>Aplicación 3 dia mundial de la salud</h4>
     <h4>José Manuel Hernández Atonal</h4>
-    </div>
+  </div>
     </div>
     
-     <div data-role="page" id="pagina5" data-add-back-btn="true" data-theme="a">
+<div data-role="page" id="pagina5" data-add-back-btn="true" data-theme="a">
  <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="b">
   <h1>Que es lo</h1>
   <h1>que no incluye</h1>
@@ -204,18 +306,32 @@
   </div>
   <div data-role="content" align="center">
   <div>
-  <img src="imagenes/mod5.png" width="100%" height="100%" alt="mod5"></div>
+  <li>La CSU no implica la cobertura gratuita de todas las intervenciones sanitarias posibles, independientemente de su costo, ya que ningún país puede permitirse ofrecer todos los servicios gratuitamente de forma sostenible.</li>
+  <p>&nbsp;</p>
+  <li>La CSU no se refiere únicamente a la financiación de la salud: abarca todos los componentes del sistema de salud, a saber, los sistemas de prestación de servicios de salud, el personal sanitario, las instalaciones sanitarias o las redes de comunicación, las tecnologías sanitarias, los sistemas de información, los mecanismos de garantía de la calidad, la gobernanza y la legislación.</li>
+  <p>&nbsp;</p>
+  <li>La CSU no solo tiene por finalidad asegurar un conjunto de servicios de salud mínimos, sino también lograr la ampliación progresiva de la cobertura de los servicios de salud y de la protección financiera, conforme se disponga de más recursos.</li>
+  <p>&nbsp;</p>
+  <li>La CSU no solo engloba los servicios de tratamiento específicos, sino también incluye los servicios a la población como las campañas de salud pública, la adición de flúor al agua, el control de los lugares de reproducción de los mosquitos, entre otros.</li>
+  <p>&nbsp;</p>
+  <li>La CSU comprende mucho más que solo la salud. Adoptar medidas para alcanzar la cobertura sanitaria universal equivale a adoptar medidas para lograr la equidad, las prioridades en materia de desarrollo y la inclusión y cohesión sociales.</li>
+  <p>&nbsp;</p>
   </div>
+  </div>
+  <div>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image22','','imagenes/hss_001.jpg',1)"><img src="imagenes/1-dia-mundial-de-la-salud-2018-cobertura-sanitaria-universal.jpg" alt="" width="690" height="350" id="Image22"></a>
+  <p>&nbsp;</p>
+   </div>
   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
   <div>
   <img src="imagenes/salud.png" width="46" height="46" alt="pie">
   </div>
   <h4>Aplicación 3 dia mundial de la salud</h4>
     <h4>José Manuel Hernández Atonal</h4>
-    </div>
+  </div>
     </div>
 
-        </body>
+</body>
         </html>
         
       
